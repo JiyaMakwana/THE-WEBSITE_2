@@ -1,0 +1,71 @@
+/*========== TABLE OF CONTENTS ========== 
+1. Input CSS
+2. Button CSS
+=======================================*/
+
+/*--------------------------------------
+1. Input CSS
+---------------------------------------*/
+
+.ui.input.round {
+    border-radius: var(--radius-xs);
+}
+
+.ui.input.size-xs {
+    height: 34px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.ui.input.fill.amber_700_42 {
+    background-color: var(--amber_700_42);
+}
+
+.ui.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+}
+
+/*--------------------------------------
+2. Button CSS
+---------------------------------------*/
+
+.ui.button.round {
+    border-radius: var(--radius-xs);
+}
+
+.ui.button.size-xs {
+    height: 42px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 16px;
+}
+
+.ui.button.size-sm {
+    height: 60px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 24px;
+}
+
+.ui.button.fill.yellow_900 {
+    background-color: var(--yellow_900);
+    color: var(--white_a700);
+}
+
+.ui.button.fill.yellow_900_c9 {
+    background-color: var(--yellow_900_c9);
+    color: var(--white_a700);
+}
+
+.ui.button {
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}

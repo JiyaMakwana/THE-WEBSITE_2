@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inquiries</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Inquiries</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+            <th>Action</th>
+        </tr>
+        <tbody id="inquiryTable">
+            <!-- Data will be inserted dynamically -->
+        </tbody>
+    </table>
+    <script src="{{ url_for('static', filename='inquiries.js') }}"></script>
+</body>
+</html>

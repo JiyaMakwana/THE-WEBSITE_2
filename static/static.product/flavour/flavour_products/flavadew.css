@@ -1,0 +1,384 @@
+/*============== TABLE OF CONTENTS ==============*/
+/* 1. Common CSS
+   2. Page CSS
+===============================================*/
+
+/*----------------------------------------------
+1. Common CSS
+-----------------------------------------------*/
+
+.category-flavour 
+{
+    background-color: var(--white_a700);
+    width: 100%;
+}
+
+.columnflavours {
+    margin-top: 135px;
+}
+
+.category-flavour_header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1244px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-flavour_title-4 {
+    letter-spacing: 3.84px;
+    font-size: 48px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #f9d447,#f3e5e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    display: block;
+    margin-left: -80px;
+    /* background-clip: text; */
+    @media only screen and (max-width: 1050px) 
+    {font-size: 44px;}
+
+    @media only screen and (max-width: 550px)
+    {font-size: 38px;}
+}
+
+.category-flavour_breadcrumb {
+    color: var(--white_a700) !important;
+    margin-top: 12px;
+    letter-spacing: 1.92px;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    left:110px;
+    top: 10px;
+    @media only screen and (max-width: 1050px) {
+        font-size: 22px;
+    }
+}
+
+.columndescripti {
+    /* margin-top: 50px; */
+    padding-left: 36px;
+    padding-right: 36px;
+    gap: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 550px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.category-flavour_column {
+    
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1210px;
+    width: 100%;
+   position:relative;
+   left:15px;
+   top: 100px;
+  
+}
+
+.category-flavour_title-2 {
+    color: var(--yellow_900) !important;
+    letter-spacing: 3.04px;
+    font-size: 48px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+        font-size: 44px;
+    }
+    @media only screen and (max-width: 550px) {
+        font-size: 38px;
+    }
+}
+
+.category-flavour_separator {
+    height: 0.5px;
+    background-color: var(--black_900);
+    align-self: stretch;
+    width:1400px;
+}
+
+.category-flavour_description {
+    color: var(--black_900) !important;
+    letter-spacing: 1.92px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    width: 98%;
+    line-height: 28px;
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+        font-size: 22px;
+    }
+}
+
+.columnproducts {
+    margin-top: 116px;
+    padding-left: 56px;
+    padding-right: 56px;
+    gap: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) 
+    {
+        gap: 54px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media only screen and (max-width: 550px) 
+    {
+        gap: 36px;
+    }
+}
+
+.category-flavour_row-1 {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: stretch;
+    display: flex;
+    max-width: 1116px;
+    width: 100%;
+}
+
+.category-flavour_list-1 {
+    gap: var(--space-lg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.product-image-with-description {
+    gap: var(--space-sm);
+    display: flex;
+    background-color: var(--gray_100);
+    box-shadow: var(--shadow-xs);
+    width: 40%;
+    height:100%;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 26px 18px;
+    border-radius: var(--radius-sm);
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+    @media only screen and (max-width: 550px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.product-image-with-description_image {
+    height: 212px;
+    margin-top: 18px;
+    position: relative;
+    left:21px;
+    width: 90%;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+    }
+}
+
+.product-image-with-description_description {
+    color: var(--black_900) !important;
+    letter-spacing: 2.32px;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    left:21px;
+    @media only screen and (max-width: 1050px) {
+        font-size: 27px;
+    }
+    @media only screen and (max-width: 550px) {
+        font-size: 25px;
+    }
+}
+
+.columnyour {
+    margin-top: 160px;
+    padding-left: 46px;
+    padding-right: 46px;
+    gap: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media only screen and (max-width: 550px) {
+        gap: 34px;
+    }
+}
+
+.category-flavour_products {
+    color: var(--lime_900) !important;
+    letter-spacing: 3.2px;
+    font-size: 40px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+        font-size: 38px;
+    }
+    @media only screen and (max-width: 550px) {
+        font-size: 36px;
+    }
+}
+
+.category-flavour-2 {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: stretch;
+    display: flex;
+    max-width: 1098px;
+    width: 100%;
+}
+
+.category-flavour_column-1 {
+    gap: 76px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    /* flex-direction: column; */
+    @media only screen and (max-width: 1050px) {
+        gap: 57px;
+    }
+    @media only screen and (max-width: 550px) {
+        gap: 38px;
+    }
+}
+
+.category-flavour_row-2 {
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.category-flavour_stack {
+    height: 354px;
+    position: relative;
+    flex: 1;
+    @media only screen and (max-width: 1050px) {
+        align-self: stretch;
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.category-flavour_image--bakery {
+    height: 212px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+    }
+}
+
+.category-flavour_row-main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+    }
+}
+
+.category-flavour_column--bakery {
+    gap: var(--space-xs);
+    background-color: var(--gray_100);
+    box-shadow: var(--shadow-xs);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+    border-radius: var(--radius-sm);
+    width: 45%;
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+    @media only screen and (max-width: 550px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+.category-flavour_title--bakery {
+    color: var(--yellow_900) !important;
+    margin-top: 6px;
+    margin-left: 10px;
+    letter-spacing: 1.88px;
+    font-size: 30px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px) {
+        font-size: 34px;
+        margin-left: 0px;
+    }
+    @media only screen and (max-width: 550px) {
+        font-size: 32px;
+    }
+}
+
+.flavadew-logo {
+    position: relative;
+    left: 1150px;
+    bottom:130px;
+   
+
+    
+    
+   
+}
+/*----------------------------------------------
+2. Page CSS
+----------------------------------------------*/
+.category-flavour-1 {
+    height: 102px;
+    background-image: url('../../../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+    }
+}
+
+.category-flavour_row {
+    height: 468px;
+    background-image: url(../../../images/flavour_page/flavour-flavadew.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 120px 56px;
+    @media only screen and (max-width: 1050px) {
+        height: auto;
+        padding: 20px;
+    }
+}

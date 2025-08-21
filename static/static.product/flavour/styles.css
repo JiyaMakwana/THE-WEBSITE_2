@@ -1,0 +1,81 @@
+/*================== TABLE OF CONTENTS ==================*/
+/* 1. CSS Variables
+   2. Utility CSS
+========================================================*/
+
+/*------------------------------------------------------*/
+/* 1. CSS Variables
+------------------------------------------------------*/
+
+:root {
+    /*------Color variables------*/
+    --black_900_3f: #0000003f;
+    --gray_100: #f5f5f5;
+    --lime_900: #884c16;
+    --white_a700_af: #ffffffaf;
+    --black_900_01: #000000;
+    --black_900_5b: #0000005b;
+    --black_900_77: #09090977;
+    --black_900_8e: #0000008e;
+    --black_900_a5: #000000a5;
+    --blue_gray_100: #d9d9d9;
+    --gray_600: #707070;
+    --orange_a200_aa: #f89a46aa;
+    --white_a700_2b: #ffffff2b;
+    --white_a700_7a: #ffffff7a;
+    --white_a700_8e: #ffffff8e;
+    --white_a700_b2: #ffffffb2;
+    --yellow_900_cc: #ef7f1acc;
+    --black_900_21: #00000021;
+    --black_900_30: #00000030;
+    --black_900_c9: #181009c9;
+    --amber_700_42: #ffa50042;
+    --black_900_56: #00000056;
+    --black_900_7f: #0000007f;
+    --black_900_e5: #000000e5;
+    --deep_orange_a700: #f81a1a;
+    --gray_900: #191919;
+    --gray_900_01: #191918;
+    --indigo_a700: #2424e3;
+    --indigo_a700_f7: #4049f3f7;
+    --white_a700_44: #ffffff44;
+    --yellow_100: #fffb81;
+    --yellow_900_c9: #fc8921c9;
+    --amber_a200: #f9d447;
+    --black_900: #000000;
+    --black_900_db: #000000db;
+    --black_900_dc: #000000dc;
+    --deep_orange_50: #f3e5e5;
+    --indigo_600: #2f3fb9;
+    --light_green_500: #8ff035;
+    --pink_400: #e81f9b;
+    --red_700: #e22929;
+    --white_a700: #ffffff;
+    --white_a700_9e: #ffffff9e;
+    --yellow_900: #ef7f1a;
+  
+    /*------Shadow variables------*/
+    --shadow-xs: 0 4px 4px 0 #0000003f;
+  
+    /*------Border radius variables------*/
+    --radius-xs: 10px;
+    --radius-sm: 46px;
+  
+    /*------Spacing variables------*/
+    --space-xs: 28px;
+    --space-sm: 32px;
+    --space-md: 72px;
+    --space-lg: 142px;
+  }
+  
+  /*------------------------------------------------------*/
+  /* 2. Utility CSS
+  ------------------------------------------------------*/
+  
+  .flex-col-center-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  

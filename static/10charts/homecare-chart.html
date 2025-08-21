@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavours Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="chart-container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="fragrance" colspan="3">Detergent Fragrances</th>
+
+                        
+                    </tr>
+                    
+                     <!-- Row 1 -->
+        <tr>
+            <td><div class="flavour"><a href="#">FRAGRANCE 1238</a><span class="cart" onclick="addToCart('FRAGRANCE 1238')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 1200</a><span class="cart" onclick="addToCart('FRAGRANCE 1200')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 1836</a><span class="cart" onclick="addToCart('FRAGRANCE 1836')">🛒</span></div></td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+            <td><div class="flavour"><a href="#">FRAGRANCE 222</a><span class="cart" onclick="addToCart('FRAGRANCE 222')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 1201</a><span class="cart" onclick="addToCart('FRAGRANCE 1201')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 777</a><span class="cart" onclick="addToCart('FRAGRANCE 777')">🛒</span></div></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+            <td><div class="flavour"><a href="#">FRAGRANCE 105</a><span class="cart" onclick="addToCart('FRAGRANCE 105')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 1800</a><span class="cart" onclick="addToCart('FRAGRANCE 1800')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 5010</a><span class="cart" onclick="addToCart('FRAGRANCE 5010')">🛒</span></div></td>
+        </tr>
+        <!-- Row 4 -->
+        <tr>
+            <td><div class="flavour"><a href="#">FRAGRANCE 7876</a><span class="cart" onclick="addToCart('FRAGRANCE 7876')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 6666</a><span class="cart" onclick="addToCart('FRAGRANCE 6666')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 1111</a><span class="cart" onclick="addToCart('FRAGRANCE 1111')">🛒</span></div></td>
+        </tr>
+        <!-- Row 5 -->
+        <tr>
+            <td><div class="flavour"><a href="#">FRAGRANCE 647</a><span class="cart" onclick="addToCart('FRAGRANCE 647')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 186</a><span class="cart" onclick="addToCart('FRAGRANCE 186')">🛒</span></div></td>
+            <td><div class="flavour"><a href="#">FRAGRANCE 4545</a><span class="cart" onclick="addToCart('FRAGRANCE 4545')">🛒</span></div></td>
+        </tr>
+        <!-- Row 6 -->
+        <tr>
+            <td><div class="flavour"><a href="#">FRAGRANCE 5929</a><span class="cart" onclick="addToCart('FRAGRANCE 5929')">🛒</span></div></td>
+            <td></td>
+            <td></td>
+        </tr>
+                </thead>
+                <tbody>
+                    <!-- Adding all items from the image -->
+          
+        
+                    
+
+                    <!-- Add the remaining rows for all items -->
+                    <!-- Follow the same structure from the image -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button class="cart-btn" onclick="openCart()">🛒 View Cart (<span id="cart-count">0</span>)</button>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            
+            <h3>Customer Details</h3>
+            <form id="orderForm">
+                <label>Name:</label>
+                <input type="text" id="customerName" required>
+
+                <label>Email:</label>
+                <input type="email" id="customerEmail" required>
+
+                <label>Address:</label>
+                <textarea id="customerAddress" required></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="../../../10charts/main_script.js"></script>
+</body>
+</html>

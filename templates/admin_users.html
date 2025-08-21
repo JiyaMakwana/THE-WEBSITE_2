@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Users</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h2>Registered Users</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Company Name</th>
+            <th>Representative Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>GST No</th>
+            <th>Action</th>
+        </tr>
+        <tbody id="userTable">
+            <!-- Data will be inserted dynamically -->
+        </tbody>
+    </table>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+/* ========================  TABLE OF CONTENTS===================
+1. COMMON CSS
+2. PAGE CSS
+================================================================
+
+------------------------------------------------------------
+    1. COMMON CSS
+---------------------------------------------------------------*/
+.registration
+{
+    height: 800px;
+    background: linear-gradient(180deg, #fff8d1, #f9d447);
+    width: 100%;
+    position: relative;
+    align-content: center;
+    margin-top: 115px;
+    flex:1;
+    @media only screen and (max-width: 1050px) {
+    height: auto;
+    }
+}
+
+.row-registration
+{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+        }
+}
+
+
+
+.registration-form_input--company
+{
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1.5px solid var(--black_900_7f); */
+    display: block;
+    width: 100%;
+    height: 33px; /* Adjust size if needed */
+    padding: 5px;
+}
+
+
+
+.registration-form_input--company input {
+    display: block;
+    width: 100%;
+    height: 32px; /* Adjust size if needed */
+    padding: 10px;
+    
+ } 
+
+
+.registration_column_img
+{
+    height: 800px;
+    margin-bottom: 424px;
+    /* width: 48%; */
+    object-fit: contain;
+}
+
+.registration-form
+{
+    margin-left: -82px;
+    position: relative;
+    background-color: var(--white_a700_44);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg);
+    /* width: 70%; */
+    border-radius: var(--radius-sm);
+    @media only screen and (max-width: 1050px) 
+    {
+        align-self: stretch;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 0px;
+    }
+}
+
+.registration-form_confirmation
+{
+    margin-bottom: 52px;
+    gap: 50px;
+    display: flex;
+    width: 70%;
+    height: 650px;
+    flex-direction: column;
+    align-items: flex-end;
+    @media only screen and (max-width: 1050px)
+    {
+        width: 100%;
+    }  
+}
+
+.registration-form_title-container
+{
+    gap: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+
+.registration-form_title
+{
+    color: var(--yellow_900) !important;
+    letter-spacing: 3.84px;
+    font-family: Corbel !important;
+    font-size: 48px;
+    font-weight: 700;
+    @media only screen and (max-width: 1050px){
+        font-size: 44px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 38px;
+        }
+}
+
+.registration-form_subtitle
+{
+    color: var(--black_900) !important;
+    letter-spacing: 1.12px;
+    font-family: Corbel !important;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.registration-form_subtitle-span
+{
+    font-weight: 300;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.registration-form_label--company
+{
+    color: var(--black_900) !important;
+    letter-spacing: 1.28px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.registration-form_email-field
+{
+    gap: var(--space-sm);
+    display: flex;
+    width: 88%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+    @media only screen and (max-width: 1050px) {
+        width: 100%;
+    }
+}
+
+
+.registration-form_psw-field
+{
+    gap: 10px;
+    display: flex;
+    width: 88%;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px){
+    width: 100%;
+    }
+}
+
+.registration-form_input--company
+{
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    background-color: var(--amber_700_42) !important;
+    align-self: stretch;
+    height: 26px;
+    border-radius: 10px !important;
+}
+
+
+
+.registration-form_label--company-span
+{
+    color: var(--black_900);
+}
+
+.registration-form_label--company-span1
+{
+    color: var(--deep_orange_a700);
+}
+
+.forget-psw-container
+{
+
+    display: block;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    text-align: left;
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+}
+
+.forget-psw-field
+{
+    color: var(--black_900_56) !important;
+    letter-spacing: 1.28px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+}
+
+.forget-psw-a
+{
+    text-decoration: none;
+}
+
+.forget-psw-a:hover
+{
+    color:red;
+}
+
+
+
+.registration-form_login-prompt
+{
+    color: var(--black_900_56) !important;
+    letter-spacing: 1.28px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:20px;
+    right:140px;
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+}
+
+.registration-form_login-prompt-span
+{
+    color: var(--black_900_56);
+}
+
+.registration-form_login-prompt-span-1
+{
+    color: var(--black_900_56);
+    font-family: Corbel;
+}
+
+.registration-form_login-prompt-span-2
+{
+    color: var(--indigo_a700_f7);
+font-family: Corbel;
+text-decoration: none;
+}
+
+.registration-form_login-prompt a:hover{
+    color:red;
+}
+
+/* ---------------------------------------------------------
+    2. Page CSS
+------------------------------------------------------------*/
+
+.registration_column
+{
+    height: 800px;
+    background-image: url("images/img2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: var(--space-md) 10px; */
+    @media only screen and (max-width: 1050px) 
+    {
+        width: 100%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   
+}
+
+.registration-button
+{
+    
+    letter-spacing: 1.92px;
+    text-align: center;
+    position: relative;
+    /* top:10px; */
+    top:50px;
+    right:190px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #EF7F1A; 
+    color: #FFFFFF;
+    width: 140px;
+    height: 45px;
+    font-size: 20px;
+    font-weight:620;
+    z-index: 10;
+}
+
+.registration-button:hover{
+    background-color: #000000;
+    color:#fff8d1;
+}
+
+
+
+
+
+
+

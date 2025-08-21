@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Inquiry Form</title>
+    <link rel="stylesheet" href="enquiry.css">
+</head>
+<body>
+
+       <!-- Floating Inquiry Button -->
+       <button class="inquiry-btn" id="inquiryButton" onclick="toggleForm()">✉ Quick Inquiry</button>
+
+       <!-- Inquiry Form -->
+       <div class="inquiry-form" id="inquiryForm">
+           <div class="inquiry-header" onclick="toggleForm()">Quick Inquiry</div>
+           <div class="inquiry-content">
+               <form id="form" action="/submit_inquiry" method="POST">
+                   <input type="text" name="name" id="name" placeholder="Full Name" required>
+                   <input type="email" name="email" id="email" placeholder="Email Address" required>
+                   <input type="tel" name="phone" id="phone" placeholder="Contact Number" required>
+                   <select name="category" id="category" required>
+                       <option value="">Select a Category</option>
+                       <option value="Flavadew">Flavadew</option>
+                       <option value="Flavaseal">Flavaseal</option>
+                       <option value="Color">Color</option>
+                       <option value="Fragrances">Fragrances</option>
+                   </select>
+                   <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+  
+  
+                   <div class="captcha-box">
+                       <span id="captchaText" >123ABC</span>
+                       <!-- <input type="text" id="captcha" placeholder="Enter Captcha" required> -->
+                       <button type="button" id="regenerateCaptcha" onclick="generateCaptcha()">🔄</button>
+                   </div>
+  
+                   <div class="captcha-container">
+                      <input type="text" id="captcha" placeholder="Enter Captcha" required>
+                      <div class="error-message" id="captchaError" style="display:none;">Incorrect CAPTCHA. Please try again.</div>
+                      <button type="submit" id="sendBtn">SEND</button>
+                   </div>
+                   
+               </form>
+           </div>
+       </div>
+   
+       <!-- Success Message Popup -->
+       <div class="success-popup" id="successPopup">Your Inquiry Submitted Successfully!</div>
+   
+       <script src="{{ url_for('static', filename='enquiry_script.js') }}"></script>
+   
+  
+</body>
+</html>

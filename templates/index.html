@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Enterprise Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Akshat Enterprise</h1>
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="flavour">Flavours</option>
+            <option value="fragrance">Fragrances</option>
+            <option value="color">Colors</option>
+        </select>
+    </header>
+
+    <section id="productSection">
+        <h2>Products</h2>
+        <div id="productList">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <section id="orderSection">
+        <h2>My Orders</h2>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Order No.</th>
+                    <th>Product</th>
+                    <th>Status</th>
+                    <th>Tracking</th>
+                    <th>Cancel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Orders will be loaded dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

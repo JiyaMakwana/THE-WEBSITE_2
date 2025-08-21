@@ -1,0 +1,29 @@
+.root
+{/*Color variables*/
+--amber_a200: #f9d447;
+--black_900: #000000;
+--black_900_db: #000000db;
+--black_900_e5: #000000e5;
+--deep_orange_50: #f3e5e5;
+--gray_900: #191919;
+--gray_900_01: #191918;
+--indigo_600: #2f3fb9;
+--light_green_500: #8ff35;
+--pink_400: #e81f9b;
+--red_700: #e22929;
+--white_a700: #ffffff;
+--white_a700_9e: #ffffff9e;
+--white_a700_af: #ffffffaf;
+--yellow_900: #ef7f1a;
+
+
+/*------Border radius variables*/
+--radius-xs: 36px;
+
+
+
+/*
+Spacing variables-*/
+--space-xs: 6px;
+--space-sm: 72px;
+--space-md: 88px;}

@@ -1,0 +1,27 @@
+.product-navigation-a
+{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+.product-navigation-a:hover{
+    color:orange;
+}
+
+.product-navigation-p
+{
+    text-decoration: none;
+    color:#ffffff;
+}
+
+
+.product-navigation-p h2:hover{
+    color:orange;
+}
+.product-navigation-p nav i:hover{
+    color:orange;
+}
+
+
+
+

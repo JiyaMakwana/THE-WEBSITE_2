@@ -1,0 +1,50 @@
+/* .ui.button.round
+{
+    border-radius: var(--radius-xs);
+}
+
+
+.ui.button.size-xs
+{
+    height: 46px;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size: 16px;
+}
+
+
+.ui.button.fill.yellow_900
+{
+    background-color: var(--yellow_900);
+    color: var(--white_a700);
+}
+
+.ui.button
+{
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: var(--white_a700);
+    letter-spacing: 1.28px;
+    font-size: 16px;
+    align-self: flex-end;
+    background-color: var(--yellow_900);
+    min-width: 160px;
+    border-radius: var(--radius-xs);
+} */
+
+
+/* 2. Container CSS */
+
+
+.container-xs
+{
+    max-width: 1248px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

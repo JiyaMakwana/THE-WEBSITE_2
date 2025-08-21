@@ -1,0 +1,211 @@
+/* body {
+    font-family: Corbel;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+} */
+
+.chart-container {
+    width: 90%;
+    /* margin: auto; */
+}
+
+.table-container {
+    /* overflow-x: auto;
+    overflow-y: auto; */
+    /* max-height: 400px; */
+    border: 1px solid #ddd;
+    background: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    
+}
+
+th, td{
+    min-width: 150px;
+}
+
+.fruity { background: #ff6600; }
+.spice { background: #cc0000; }
+.nutty { background: #663300; }
+.alcoholic { background: #009999; }
+
+.brown { background: #8B5A2B; }
+.mint { background: #4CAF50; }
+.citrus { background: #FFA500; }
+.flowery { background: #A55EEA; }
+.vegies { background: #679436; }
+.indian { background: #E63946; }
+
+.fragrance { background: rgb(89, 242, 242); }
+.color { background: #44be39; color: black; text-align: center;}
+
+.micro { background: #72ff30; }
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+    position: relative;
+    
+}
+
+.chart-flavour {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.c1 a, .c2 a, .c3 a, .c4 a, .c5 a, .c6 a , .c7 a, .c8 a, .c9 a, .c10 a, .c11 a , .c12 a {
+    color: white;
+}
+
+.c1 {background: #FFD700;}
+
+.c2 { background: #FF7518;}
+
+.c3 {background: #D9004C;}
+
+.c4 {background: #ED1C24;}
+
+.c5 {background: #E52B50;}
+
+.c6 {background: #3F000F;}
+
+.c7 {background: #E32636;}
+
+.c8 {background-color: #0070FF;}
+
+.c9 {background: #4B0082;}
+
+.c10 {background: #D02090;}
+
+.c11 {background: #F0E68C;}
+
+.c12 {background: #000000;}
+
+
+
+a:hover {
+    color: #ff6600;
+}
+
+.cart {
+    display: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #007bff;
+}
+
+.flavour:hover .cart {
+    display: inline-block;
+}
+
+/* Cart Button */
+.cart-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: scroll;
+}
+
+.modal-content {
+    background-color: rgb(240, 236, 236);
+    margin: 10% auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form label {
+    margin-top: 10px;
+}
+.orderForm input,textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    width: 100%;
+}
+
+
+button {
+    margin-top: 15px;
+    background-color: #007bff;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.remove-btn {
+    background-color: black;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}

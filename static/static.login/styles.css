@@ -1,0 +1,30 @@
+:root
+{
+    /* ---------Color variables --------------*/
+    --black_900_21: #00000021;
+    --black_900_30: #00000030;
+    --black_900_56: #00000056;
+    --deep_orange_a700: #f81a1a;
+    --indigo_a700_f7: #4049f3f7;
+    --amber_700_42: #ffa50042;
+    --amber_a200: #f9d447;
+    --black_900: #000000;
+    --black_900_7f: #0000007f;
+    --black_900_c9: #181009c9;
+    --white_a700: #ffffff;
+    --white_a700_44: #ffffff44;
+    --yellow_100: #fff8d1;
+    --yellow_900: #ef7f1a;
+
+
+    /*---------------- Border radius variables--------------- */
+    -radius-xs: 10px;
+    -radius-sm: 38px;
+
+
+    /* --------------------Spacing variables----------------- */
+    --space-xs: 4px;
+    --space-sm: 6px;
+    --space-md: 12px;
+    --space-lg: 14px;
+}

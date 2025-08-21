@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Food FLavours - AKSHAT ENTERPRISE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Discover a variety of food flavours to enhance your culinary creations. From sweet to bitter notes, our FLavadew and FLavaseal ranges carter to all your flavouring needs. Perfect for bakery, beverages, dairym and pharmaceuticals applications."/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/font.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/components.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='enquiry.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/flavour_application/flav-bakery.css') }}">
+</head>
+    <body>
+        <div class="nav-1">
+            <div class="main_header">
+                <div class="logo">
+                    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="OUR LOGO"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">HOME</a></li>
+                        <li><a href="{{ url_for('product_page') }}">PRODUCTS</a></li>
+                        <li><a href="{{ url_for('customer_order') }}">ORDERS</a></li>
+                        <li><a href="{{ url_for('blogs') }}">BLOGS</a></li>
+                        <li><a href="{{ url_for('contact_us') }}">CONTACT US</a></li>
+                        <li><a href="{{ url_for('login') }}"><button class="login-but" >Login/Register</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-flavour">
+            <div class="columnflavours">
+                <div class="category-flavour-1">
+                    <div class="category-flavour_header">
+                        <p class="category-flavour_title-4 ui text size-textxl">BAKERY</p>
+                        <h1 class="category-flavour_breadcrumb ui heading soxe-headings">Home &gt; Products &gt; Flavours &gt; Bakery</h1>
+                    </div>
+                </div>
+                <div class="category-flavour_row"></div>
+            </div>
+
+            <!--- flavour description section -->
+            <div class="columndescripti">
+                <div class="category-flavour_column">
+                    <h2 class="category-flavour_title-2 ui heading size-headingxl">Bakery & Confectionery
+                    </h2>
+                    <h2 class="category-flavour_products ui heading size-headinglg">The Sweet Fruity Temptation</h2>
+                    <!-- <div class="category-flavour_separator"></div> -->
+                </div>
+                <p class="category-flavour_description ui text size-textmd">
+                    Sweet, fruity, brown or spicy, Akshat Enterprise has a range of all the taste sensations to make your bakery goods special and savory. From cookies, creative cup cakes, sugar candy, gums to chocolates and macaroons, Flavaroma's perfectly tailored heat resistant and baked stable flavours are best blended
+ingredient for all bakery items. We also have natural vanilla, artificial fruity flavours, oil or water soluble treats along with a whole new range of exciting flavours.
+                </p>
+            </div>
+
+             <!--- application areas  section-->
+             <div class="columnyour">
+              
+                    <div class="categroy-flavour-2">
+
+                        <div class="category-flavour_column-1">
+                            <div class="category-flavour_row-main">
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('bakery') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Bakery</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app1.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('beverage') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Beverages</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app2.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('dairy') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Dairy</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app3.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('pharma') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Pharmaceuticals</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app4.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--- product showcase section -->
+            <div class="columnproducts">
+                <h2 class="category-flavour_products ui heading size-headinglg">Products</h2>
+                <div class="category-flavour_row-1">
+                    <div class="category-flavour_list-1">
+                        <div class="product-image-with-description">
+                            <img src="{{ url_for('static', filename='images/flavadew.jpg') }}" alt="Image" class="product-image-with-description_image">
+                            <a href="{{ url_for('flavadew') }}" target=" ">
+                            <p class="product-image-with-description_description ui text size-textlg">Flavadew-Liquid Flavours</p></a>
+                        </div>
+                        <div class="product-image-with-description">
+                            <img src="{{ url_for('static', filename='images/flavaseal.jpg') }}" alt="Image" class="product-image-with-description_image">
+                            <a href="{{ url_for('flavaseal') }}" target=" ">
+                            <p class="product-image-with-description_description ui text size-textlg">FLavaseal-Micro Powder Fla</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+
+        <!-- First Footer -->
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Flavaroma Logo" >
+        <text class="we_sell">We sell :</text>
+        <img src="{{ url_for('static', filename='images/flavadew.jpg') }}" alt="Flavaroma Logo">
+        <img src="{{ url_for('static', filename='images/flavaseal.jpg') }}" alt="Flavaroma Logo"> 
+        <img src="{{ url_for('static', filename='images/color_logo.png') }}" alt="Flavaroma Logo" class="color_logo">
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Second Footer -->
+  <footer class="footer2">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div class="footer-column1">
+                <ul>
+                    <li class = "dontshow">dont show </li>
+                    <li class = "dontshow">dont show </li>
+                    <li>
+                        <div class="footer-logo">
+                            <img src="{{ url_for('static', filename='images/Akshat Enterprise-logo1 (1).png') }}" alt="Akshat Enterprise Logo"> 
+                          </div>
+                          <div class="footer-text">
+                            <p>Copyright © 2024-2030</p>
+                            <p>AKSHAT ENTERPRISE.</p>
+                            <p>All rights reserved.</p>
+                          </div>
+                          <div class="social-icons">
+                            <a href="https://youtube.com/@flavaromaff?si=t4WSQYLZa9Ps-2CO" target=" "><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://wa.me/message/73J32OMRO46CF1"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/akshat.enterprise?igsh=MWZvdWVlYXoyenE5OQ==" target=" "><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Company</h3>
+            <ul>
+                <li><a href="#" target="_blank">History</a></li>
+                <li><a href="#" target="_blank">Vision</a></li>
+                <li>Business segments
+                    <ul>
+                        <li><a href="{{ url_for('flavour_main_page') }}" target="_blank">Flavours</a></li>
+                        <li><a href="{{ url_for('fragrance_main_page') }}" target="_blank">Fragrances</a></li>
+                        <li><a href="{{ url_for('color_main_page') }}" target="_blank">Colours</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Flavour</h3>
+                <ul>
+                    <li><a href=".{{ url_for('product_page') }}" target="_blank">Products</a></li>
+                    <li><a href="{{ url_for('product_page') }}" target="_blank">Your Applications</a></li>
+                    <li>Bakery
+                        <ul>
+                            <li><a href="{{ url_for('dairy') }}" target="_blank">Confectionery</a></li>
+                            <li><a href="{{ url_for('beverage') }}" target="_blank">Beverages</a></li>
+                            <li><a href="{{ url_for('dairy') }}" target="_blank">Dairy</a></li>
+                            <li><a href="{{ url_for('pharma') }}" target="_blank">Pharmaceuticals</a></li>
+                        </ul>  
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li><a href="{{ url_for('color_main_page') }}" target="_blank">Colours</a></li>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}" target="_blank">Enquiry</a></li>
+                        <li><a href="{{ url_for('blogs') }}" target="_blank">Blog</a></li>
+                        <li><a href="{{ url_for('contact_us') }}" target="_blank">Contact Us</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+              </ul>
+            </div>
+            </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+  </footer>
+</div>
+
+
+     <!-- Floating Inquiry Button -->
+     <button class="inquiry-btn" id="inquiryButton" onclick="toggleForm()">✉ Quick Inquiry</button>
+
+     <!-- Inquiry Form -->
+     <div class="inquiry-form" id="inquiryForm">
+         <div class="inquiry-header" onclick="toggleForm()">Quick Inquiry</div>
+         <div class="inquiry-content">
+             <form id="form" action="/submit_inquiry" method="POST">
+                 <input type="text" name="name" id="name" placeholder="Full Name" required>
+                 <input type="email" name="email" id="email" placeholder="Email Address" required>
+                 <input type="tel" name="phone" id="phone" placeholder="Contact Number" required>
+                 <select name="category" id="category" required>
+                     <option value="">Select a Category</option>
+                     <option value="Flavadew">Flavadew</option>
+                     <option value="Flavaseal">Flavaseal</option>
+                     <option value="Color">Color</option>
+                     <option value="Fragrances">Fragrances</option>
+                 </select>
+                 <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+
+
+                 <div class="captcha-box">
+                     <span id="captchaText" >123ABC</span>
+                     <!-- <input type="text" id="captcha" placeholder="Enter Captcha" required> -->
+                     <button type="button" id="regenerateCaptcha" onclick="generateCaptcha()">🔄</button>
+                 </div>
+
+                 <div class="captcha-container">
+                    <input type="text" id="captcha" placeholder="Enter Captcha" required>
+                    <div class="error-message" id="captchaError" style="display:none;">Incorrect CAPTCHA. Please try again.</div>
+                    <button type="submit" id="sendBtn">SEND</button>
+                 </div>
+                 
+             </form>
+         </div>
+     </div>
+ 
+     <!-- Success Message Popup -->
+     <div class="success-popup" id="successPopup">Your Inquiry Submitted Successfully!</div>
+ 
+     <script src="{{ url_for('static', filename='enquiry_script.js') }}"></script>
+ 
+
+
+    </body>
+</html>
+    
+                

@@ -1,0 +1,123 @@
+/* ===================== TABLE OF CONTENTS================= 
+    1. INPUT CSS
+    2. BUTTON CSS
+    3. TEXTAREA  CSS
+========================================================*/
+
+/* -------------------------------------------
+    INPUT CSS
+---------------------------------------------- */
+
+.ui.input.round
+{
+    border-radius: var(--radius-xs);
+}
+
+
+.ui.input.size-xs
+{
+    height: 24px;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    font-size: 10px;
+}
+
+
+.ui.input.size-sm
+{
+    height: 35px;
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+}
+
+
+.ui.input.fill.amber_700_42
+{
+    background-color: var(--amber_700_42);
+    color: var(--black_900_30);
+}
+
+
+.ui.input
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    background-color: var(--amber_700_42);
+    border-radius: var(--radius-xs);
+    border: 1.5px solid var(--black_900_7f);
+    height: 35px;
+    padding: 8px;
+}
+
+/* -------------------------------------------
+    2. BUTTON CSS
+---------------------------------------------- */
+
+.ui.button.round
+{
+border-radius: var(--radius-xs);
+}
+
+
+.ui.button.size-xs
+{
+    height: 50px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-size: 20px;
+}
+
+
+.ui.button.fill.yellow_900
+{
+    background-color: var(--yellow_900);
+    color: var(--white_a700);
+}
+
+.ui.button
+{
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    color: var(--white_a700);
+    letter-spacing: 1.92px;
+    font-size: 24px;
+    background-color: var(--yellow_900);
+    min-width: 174px;
+    position: absolute;
+    bottom: 4%;
+    right: 18%;
+    border-radius: var(--radius-xs);
+    @media only screen and (max-width: 1050px) {
+        font-size: 22px;
+    }
+}
+
+/* -------------------------------------------
+    3. Text area CSS
+---------------------------------------------- */
+
+.ui.textarea.round
+{
+    border-radius: var(--radius-xs);
+}
+
+
+.ui.textarea.size-xs
+{
+    height: 100px;
+    padding: var(--space-md);
+}
+
+
+.ui.textarea.taroutlineblack9007f.amber_700_42
+{
+    background-color: var(--amber_700_42);
+border: 1.5px solid var(--black_900_7f) !important;
+}

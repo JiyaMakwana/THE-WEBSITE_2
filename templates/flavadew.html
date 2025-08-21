@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Food FLavours - AKSHAT ENTERPRISE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#000000"/>
+    <meta name="description" content="Discover a variety of food flavours to enhance your culinary creations. From sweet to bitter notes, our FLavadew and FLavaseal ranges carter to all your flavouring needs. Perfect for bakery, beverages, dairym and pharmaceuticals applications."/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/index.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/font.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/components.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='header_footer.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='enquiry.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='10charts/main_styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static.product/flavour/flavour_products/flavadew.css') }}">
+</head>
+    <body>
+        <div class="nav-1">
+            <div class="main_header">
+                <div class="logo">
+                    <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="OUR LOGO"></a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="{{ url_for('home') }}">HOME</a></li>
+                        <li><a href="{{ url_for('product_page') }}">PRODUCTS</a></li>
+                        <li><a href="{{ url_for('customer_order') }}">ORDERS</a></li>
+                        <li><a href="{{ url_for('blogs') }}">BLOGS</a></li>
+                        <li><a href="{{ url_for('contact_us') }}">CONTACT US</a></li>
+                        <li><a href="{{ url_for('login') }}"><button class="login-but" >Login/Register</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="category-flavour">
+            <div class="columnflavours">
+                <div class="category-flavour-1">
+                    <div class="category-flavour_header">
+                        <p class="category-flavour_title-4 ui text size-textxl">FLAVADEW</p>
+                        <h1 class="category-flavour_breadcrumb ui heading soxe-headings">Home &gt; Products &gt; Flavours &gt; Flavadew</h1>
+                    </div>
+                </div>
+                <div class="category-flavour_row"></div>
+            </div>
+
+            <!--- flavour description section -->
+            <div class="columndescripti">
+                <div class="category-flavour_column">
+                    <h2 class="category-flavour_title-2 ui heading size-headingxl">Flavadew</h2>
+                    
+                    <h2 class="category-flavour_products ui heading size-headinglg">Liquid Flavours</h2>
+                    <!-- <div class="category-flavour_separator"></div> -->
+                    <img src="{{ url_for('static', filename='images/flavadew.jpg') }}" alt="logodew" class="flavadew-logo">
+                    
+                </div>
+                <!-- <div class="flavadew-logo-row"> -->
+                <!-- </div> -->
+               
+    <div class="chart-container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="fruity" colspan="3">Fruity</th>
+                        <!-- <th class="fruity"></th>
+                        <th class="fruity"></th> -->
+                        <th class="spice">Spice</th>
+                        <th class="nutty">Nutty</th>
+                        <th class="alcoholic">Alcoholic</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Adding all items from the image -->
+                     <!-- row-1 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Apple</a><span class="cart" onclick="addToCart('Apple')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Jackfruit</a><span class="cart" onclick="addToCart('Jackfruit')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pear</a><span class="cart" onclick="addToCart('Pear')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Anise</a><span class="cart" onclick="addToCart('Anise')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coconut</a><span class="cart" onclick="addToCart('Coconut')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Bonifacetur</a><span class="cart" onclick="addToCart('Bonifacetur')">🛒</span></div></td>
+                    </tr>
+                     <!-- row-2 -->
+
+                    <tr>
+                        
+                        <td><div class="flavour"><a href="#">Apple Cinnamon</a><span class="cart" onclick="addToCart('Apple Cinnamon')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kala Khatta</a><span class="cart" onclick="addToCart('Kala Khatta')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pina Colada</a><span class="cart" onclick="addToCart('Pina Colada')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Black Pepper</a><span class="cart" onclick="addToCart('Black Pepper')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coconut Cookies</a><span class="cart" onclick="addToCart('Coconut Cookies')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Brandy</a><span class="cart" onclick="addToCart('Brandy')">🛒</span></div></td>
+                    </tr>
+                     <!-- row-3 -->
+
+                    <tr>
+                        <td><div class="flavour"><a href="#">Apple Green</a><span class="cart" onclick="addToCart('Apple Green')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kiwi</a><span class="cart" onclick="addToCart('Kiwi')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pineapple</a><span class="cart" onclick="addToCart('Pineapple')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Cardamom</a><span class="cart" onclick="addToCart('Cardamom')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coconut Copra</a><span class="cart" onclick="addToCart('Coconut Copra')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Champagne</a><span class="cart" onclick="addToCart('Champagne')">🛒</span></div></td>
+                    </tr>
+                     <!-- row-4 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Apricot</a><span class="cart" onclick="addToCart('Apricot')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kola</a><span class="cart" onclick="addToCart('Kola')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pineapple Hawailan</a><span class="cart" onclick="addToCart('Pineapple Hawailan')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Cardamom Green</a><span class="cart" onclick="addToCart('Cardamom Green')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coconut Crunchy</a><span class="cart" onclick="addToCart('Coconut Crunchy')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Cognac</a><span class="cart" onclick="addToCart('Cognac')">🛒</span></div></td>
+                    </tr>
+                     <!-- row-5 -->
+
+                    <tr>
+                        <td><div class="flavour"><a href="#">Banana</a><span class="cart" onclick="addToCart('Banana')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Liquorice</a><span class="cart" onclick="addToCart('Liquorice')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pineapple Sweet</a><span class="cart" onclick="addToCart('Pineapple Sweet')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Chili</a><span class="cart" onclick="addToCart('Chili')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coconut Milk</a><span class="cart" onclick="addToCart('Coconut Milk')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Curacao</a><span class="cart" onclick="addToCart('Curacao')">🛒</span></div></td>
+                    </tr>
+                     <!-- row-6 -->
+
+                    <tr>
+                        <td><div class="flavour"><a href="#">Black Current</a><span class="cart" onclick="addToCart('Black Current')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lychee</a><span class="cart" onclick="addToCart('Lychee')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Plum</a><span class="cart" onclick="addToCart('Plum')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Cinnamon</a><span class="cart" onclick="addToCart('Cinnamon')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coconut Water</a><span class="cart" onclick="addToCart('Coconut Water')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Gin Cordial</a><span class="cart" onclick="addToCart('Gin Cordial')">🛒</span></div></td>
+                    </tr>
+
+                    
+
+                    
+                    <!-- Row 7 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Blue Berry</a><span class="cart" onclick="addToCart('Blue Berry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Malaga Grape</a><span class="cart" onclick="addToCart('Malaga Grape')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pomegranate</a><span class="cart" onclick="addToCart('Pomegranate')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Clove</a><span class="cart" onclick="addToCart('Clove')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Hazelnut</a><span class="cart" onclick="addToCart('Hazelnut')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Ginger Dry</a><span class="cart" onclick="addToCart('Ginger Dry')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 8 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Bubble Gum</a><span class="cart" onclick="addToCart('Bubble Gum')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mango Alphanso</a><span class="cart" onclick="addToCart('Mango Alphanso')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Raisin</a><span class="cart" onclick="addToCart('Raisin')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Cumin</a><span class="cart" onclick="addToCart('Cumin')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Peanut</a><span class="cart" onclick="addToCart('Peanut')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Gin London</a><span class="cart" onclick="addToCart('Gin London')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 9 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cashew Fruit</a><span class="cart" onclick="addToCart('Cashew Fruit')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mango Green</a><span class="cart" onclick="addToCart('Mango Green')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Raspberry</a><span class="cart" onclick="addToCart('Raspberry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Ginger</a><span class="cart" onclick="addToCart('Ginger')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pista</a><span class="cart" onclick="addToCart('Pista')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Ginger Alebelfast</a><span class="cart" onclick="addToCart('Ginger Alebelfast')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 10 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cherry</a><span class="cart" onclick="addToCart('Cherry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mango Kesar</a><span class="cart" onclick="addToCart('Mango Kesar')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Raspberry Jam</a><span class="cart" onclick="addToCart('Raspberry Jam')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Ginger Dry</a><span class="cart" onclick="addToCart('Ginger Dry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pistachio</a><span class="cart" onclick="addToCart('Pistachio')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Impromel</a><span class="cart" onclick="addToCart('Impomel')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 11 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cherry Sweet</a><span class="cart" onclick="addToCart('Cherry Sweet')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mango Ripe</a><span class="cart" onclick="addToCart('Mango Ripe')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Raspberry Sweet</a><span class="cart" onclick="addToCart('Raspberry Sweet')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Ginger Spicy</a><span class="cart" onclick="addToCart('Ginger Spicy')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Walnut</a><span class="cart" onclick="addToCart('Walnut')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kola Champagne</a><span class="cart" onclick="addToCart('Kola Champagne')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 12 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cranberry  </a><span class="cart" onclick="addToCart('Cranberry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mellow</a><span class="cart" onclick="addToCart('Mellow')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Starfruit</a><span class="cart" onclick="addToCart('Starfruit')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mixed Spices</a><span class="cart" onclick="addToCart('Mixed Spices')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Malanga Wine</a><span class="cart" onclick="addToCart('Malanga Wine')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 13 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Custard</a><span class="cart" onclick="addToCart('Custard')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Melon</a><span class="cart" onclick="addToCart('Melon')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Strawberry Fresh</a><span class="cart" onclick="addToCart('Strawberry Fresh')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Oregano</a><span class="cart" onclick="addToCart('Oregano')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Margarita</a><span class="cart" onclick="addToCart('Margarita')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 14 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Date</a><span class="cart" onclick="addToCart('Date')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mixed Berry</a><span class="cart" onclick="addToCart('Mixed Berry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Strawberry</a><span class="cart" onclick="addToCart('Strawberry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Paprika</a><span class="cart" onclick="addToCart('Paprika')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mojito</a><span class="cart" onclick="addToCart('Mojito')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 15 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Durian</a><span class="cart" onclick="addToCart('Durian')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mixed Fruit</a><span class="cart" onclick="addToCart('Mixed Fruit')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Tamarind</a><span class="cart" onclick="addToCart('Tamarind')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Parsley</a><span class="cart" onclick="addToCart('Parsley')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Port Wine</a><span class="cart" onclick="addToCart('Port Wine')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 16 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Falsa</a><span class="cart" onclick="addToCart('Falsa')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mulberry</a><span class="cart" onclick="addToCart('Mulberry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Tonovin</a><span class="cart" onclick="addToCart('Tonovin')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pepper</a><span class="cart" onclick="addToCart('Pepper')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart(' ')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Red Wine</a><span class="cart" onclick="addToCart('Red Wine')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 17 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Fig</a><span class="cart" onclick="addToCart('Fig')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Muscat Grape</a><span class="cart" onclick="addToCart('Muscat Grape')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Tropical</a><span class="cart" onclick="addToCart('Tropical')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Vino</a><span class="cart" onclick="addToCart('Vino')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Rum</a><span class="cart" onclick="addToCart('Rum')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 18 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Gooseberry</a><span class="cart" onclick="addToCart('Gooseberry')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Papaya</a><span class="cart" onclick="addToCart('Papaya')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Tutti Frutti</a><span class="cart" onclick="addToCart('Tutti Frutti')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"> </a><span class="cart" onclick="addToCart(' ')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Rum Jamaican</a><span class="cart" onclick="addToCart('Rum Jamaican')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 19 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Grape Concord</a><span class="cart" onclick="addToCart('Grape Concord')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Passion Fruit</a><span class="cart" onclick="addToCart('Passion Fruit')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Vino</a><span class="cart" onclick="addToCart('Vino')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"> </a><span class="cart" onclick="addToCart(' ')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 20 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Grape White</a><span class="cart" onclick="addToCart('Grape White')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Peach</a><span class="cart" onclick="addToCart('Peach')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"> Water Melon</a><span class="cart" onclick="addToCart('Water Melon')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"> </a><span class="cart" onclick="addToCart(' ')">🛒</span></div></td>
+                    </tr>
+                    <!-- Row 21 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Guava</a><span class="cart" onclick="addToCart('Guava')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('Peach')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"> </a><span class="cart" onclick="addToCart(' ')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"></a><span class="cart" onclick="addToCart('')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#"> </a><span class="cart" onclick="addToCart('   ')">🛒</span></div></td>
+                    </tr>
+
+                    <!-- Add the remaining rows for all items -->
+                    <!-- Follow the same structure from the image -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="brown">Brown</th>
+                        <th class="mint">Mint</th>
+                        <th class="citrus">Citrus</th>
+                        <th class="flowery">Flowery & Herbal</th>
+                        <th class="vegies">Vegetable</th>
+                        <th class="indian">Traditional Indian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Adding all items from the image -->
+                    <!-- row1 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Biscuit</a><span class="cart" onclick="addToCart('Biscuit')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Basil</a><span class="cart" onclick="addToCart('Basil')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Blood Orange</a><span class="cart" onclick="addToCart('Blood Orange')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Green Tea</a><span class="cart" onclick="addToCart('Green Tea')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Bell pepper</a><span class="cart" onclick="addToCart('Bell pepper')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Amber</a><span class="cart" onclick="addToCart('Amber')">🛒</span></div></td>
+                    </tr>
+                    <!-- row2 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Butter</a><span class="cart" onclick="addToCart('Butter')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Double Mint</a><span class="cart" onclick="addToCart('Double Mint')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lemon</a><span class="cart" onclick="addToCart('Lemon')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Herbal</a><span class="cart" onclick="addToCart('Herbal')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Capsicum Green</a><span class="cart" onclick="addToCart('Capsicum Green')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Badam Pista Kesar</a><span class="cart" onclick="addToCart('Badam Pista Kesar')">🛒</span></div></td>
+                    </tr>
+                    <!-- row3 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Butter Salted</a><span class="cart" onclick="addToCart('Butter Salted')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Gum Mint</a><span class="cart" onclick="addToCart('Gum Mint')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lemon Green</a><span class="cart" onclick="addToCart('Lemon Green')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Jasmine</a><span class="cart" onclick="addToCart('Jasmine')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Carrot</a><span class="cart" onclick="addToCart('Carrot')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Ghee</a><span class="cart" onclick="addToCart('Ghee')">🛒</span></div></td>
+                    </tr>
+                    <!-- row4 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Butter Toffee</a><span class="cart" onclick="addToCart('Butter Toffee')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Menthol</a><span class="cart" onclick="addToCart('Menthol')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lemon Lime</a><span class="cart" onclick="addToCart('Lemon Lime<')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kewra</a><span class="cart" onclick="addToCart('Kewra')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Chilli</a><span class="cart" onclick="addToCart('Chilli')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Gulkand</a><span class="cart" onclick="addToCart('Gulkand')">🛒</span></div></td>
+                    </tr>
+                    <!-- row5 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Butterscotch</a><span class="cart" onclick="addToCart('Butterscotch')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mint</a><span class="cart" onclick="addToCart('Mint')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lemon Spicy</a><span class="cart" onclick="addToCart('Lemon Spicy')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lavendar</a><span class="cart" onclick="addToCart('Lavendar')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Coriander</a><span class="cart" onclick="addToCart('Coriander')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kaju Kismiss</a><span class="cart" onclick="addToCart('Kaju Kismiss')">🛒</span></div></td>
+                    </tr>
+                    <!-- row6 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cake</a><span class="cart" onclick="addToCart('Cake')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mint Cool</a><span class="cart" onclick="addToCart('Mint Cool')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lime</a><span class="cart" onclick="addToCart('Lime')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Rose</a><span class="cart" onclick="addToCart('Rose')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Cucumber</a><span class="cart" onclick="addToCart('Cucumber')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kalakhatta</a><span class="cart" onclick="addToCart('Kalakhatta')">🛒</span></div></td>
+                    </tr>
+                    <!-- row7 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cappuccino</a><span class="cart" onclick="addToCart('Cappuccino')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mint fresh</a><span class="cart" onclick="addToCart('Mint fresh')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Lime bitter</a><span class="cart" onclick="addToCart('Lime bitter')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Rose green</a><span class="cart" onclick="addToCart('Rose green')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Dried tomato</a><span class="cart" onclick="addToCart('Dried tomato')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kesar elaichi</a><span class="cart" onclick="addToCart('Kesar elaichi')">🛒</span></div></td>
+                    </tr>
+                    <!-- row8 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Caramel</a><span class="cart" onclick="addToCart('Caramel')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mint Spicy</a><span class="cart" onclick="addToCart('Mint Spicy')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mandarin</a><span class="cart" onclick="addToCart('Mandarin')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Rose white</a><span class="cart" onclick="addToCart('Rose white')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Garlic</a><span class="cart" onclick="addToCart('Garlic')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kesar pista</a><span class="cart" onclick="addToCart('Kesar pista')">🛒</span></div></td>
+                    </tr>
+                    <!-- row9 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Caramel milk</a><span class="cart" onclick="addToCart('Caramel milk')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pine</a><span class="cart" onclick="addToCart('Pine')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mandarin red</a><span class="cart" onclick="addToCart('Mandarin red')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Saffron</a><span class="cart" onclick="addToCart('Saffron')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Jalapeno</a><span class="cart" onclick="addToCart('Jalapeno')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kheer</a><span class="cart" onclick="addToCart('Kheer')">🛒</span></div></td>
+                    </tr>
+                    <!-- row10 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cheese</a><span class="cart" onclick="addToCart('Cheese')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Peppermint</a><span class="cart" onclick="addToCart('Peppermint')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Orange</a><span class="cart" onclick="addToCart('Orange')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Saffron kashmiri</a><span class="cart" onclick="addToCart('Saffron kashmiri')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Onion</a><span class="cart" onclick="addToCart('Onion')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Kulfi</a><span class="cart" onclick="addToCart('Kulfi')">🛒</span></div></td>
+                    </tr>
+
+                    <!-- row11 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Chocolate Dark</a><span class="cart" onclick="addToCart('Chocolate Dark')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Spearmint</a><span class="cart" onclick="addToCart('Spearmint')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Orange Fresh</a><span class="cart" onclick="addToCart('Orange Fresh')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Red Beans</a><span class="cart" onclick="addToCart('Red Beans')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Mawa Malai</a><span class="cart" onclick="addToCart('Mawa Malai')">🛒</span></div></td>
+                    </tr>
+                    <!-- row12 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Choco Mint</a><span class="cart" onclick="addToCart('Choco Mint')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Orange Pulpy</a><span class="cart" onclick="addToCart('Orange Pulpy')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Tomato</a><span class="cart" onclick="addToCart('Tomato')">🛒</span></div></td>
+                        <td><div class="flavour"><a href="#">Pan Bahar</a><span class="cart" onclick="addToCart('Pan Bahar')">🛒</span></div></td>
+                    </tr>
+                    <!-- row13 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Chocolate</a><span class="cart" onclick="addToCart('Chocolate')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Orange Spicy</a><span class="cart" onclick="addToCart('Orange Spicy')">🛒</span></div></td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Pan Masala</a><span class="cart" onclick="addToCart('Pan Masala')">🛒</span></div></td>
+                    </tr>
+                    <!-- row14 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Chocolate sweet</a><span class="cart" onclick="addToCart('Butter Toffee')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Pomelo</a><span class="cart" onclick="addToCart('Pomelo')">🛒</span></div></td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Rajbhog</a><span class="cart" onclick="addToCart('Rajbhog')">🛒</span></div></td>
+                    </tr>
+                    <!-- row15 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Chocolate White</a><span class="cart" onclick="addToCart('Chocolate White')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Sweet Orange</a><span class="cart" onclick="addToCart('Sweet Orange')">🛒</span></div></td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Ras Malai</a><span class="cart" onclick="addToCart('Ras Malai')">🛒</span></div></td>
+                    </tr>
+                    <!-- row16 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Cocoa</a><span class="cart" onclick="addToCart('Cocoa')">🛒</span></div></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Tangerine</a><span class="cart" onclick="addToCart('Tangerine')">🛒</span></div></td>
+                        <td></td>
+                        <td></td>
+                        <td><div class="flavour"><a href="#">Thandai</a><span class="cart" onclick="addToCart('Thandai')">🛒</span></div></td>
+                    </tr>
+                    <!-- row17 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Coffee</a><span class="cart" onclick="addToCart('Cappuccino')">🛒</span></div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- row18 -->
+                    <tr>
+                        <td><div class="flavour"><a href="#">Coffee Filter</a><span class="cart" onclick="addToCart('Coffee Filter')">🛒</span></div></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <button class="cart-btn" onclick="openCart()">🛒 View Cart (<span id="cart-count">0</span>)</button>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            
+            <h3>Customer Details</h3>
+            <form id="orderForm">
+                <label>Name:</label>
+                <input type="text" id="customerName" required>
+
+                <label>Email:</label>
+                <input type="email" id="customerEmail" required>
+
+                <label>Address:</label>
+                <textarea id="customerAddress" required></textarea>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='10charts/main_script.js') }}"></script>           
+            </div>
+
+            <!--- product showcase section -->
+            <div class="columnproducts">
+                <h2 class="category-flavour_products ui heading size-headinglg">Products</h2>
+                <div class="category-flavour_row-1">
+                    <div class="category-flavour_list-1">
+                        <div class="product-image-with-description">
+                            <img src="{{ url_for('static', filename='images/flavadew.jpg') }}" alt="Image" class="product-image-with-description_image">
+                            <a href="{{ url_for('flavadew') }}" target=" "><p class="product-image-with-description_description ui text size-textlg">Flavadew-Liquid Flavours</p></a>
+                        </div>
+                        <div class="product-image-with-description">
+                            <img src="{{ url_for('static', filename='images/flavaseal.jpg') }}" alt="Image" class="product-image-with-description_image">
+                            <a href="{{ url_for('flavaseal') }}" target=" "><p class="product-image-with-description_description ui text size-textlg">FLavaseal-Micro Powder Fla</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+             <!--- application areas  section-->
+             <div class="columnyour">
+                <h2 class="category-flavour_products ui heading size-headinglg">Your Applications</h2>
+                    <div class="categroy-flavour-2">
+
+                        <div class="category-flavour_column-1">
+                            <div class="category-flavour_row-main">
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('bakery') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Bakery</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app1.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('beverage') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Beverages</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app2.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('dairy') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Dairy</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app3.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                                <div class="category-flavour_column--bakery">
+                                    <a href="{{ url_for('pharma') }}" target=" " >
+                                    <h2 class="category-flavour_title--bakery ui heading size-headingmd">Pharmaceuticals</h2></a>
+                                    <img src="{{ url_for('static', filename='images/flavour_page/app4.jpg') }}" alt="appthree" class="category-flavour_image--bakery">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+        <!-- First Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Flavaroma Logo" >
+                <text class="we_sell">We sell :</text>
+                <img src="{{ url_for('static', filename='images/flavadew.jpg') }}" alt="Flavaroma Logo">
+                <img src="{{ url_for('static', filename='images/flavaseal.jpg') }}" alt="Flavaroma Logo"> 
+                <img src="{{ url_for('static', filename='images/color_logo.png') }}" alt="Flavaroma Logo" class="color_logo">
+              </div>
+              
+            </div>
+          </footer>
+
+  <!-- Second Footer -->
+  <footer class="footer2">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div class="footer-column1">
+                <ul>
+                    <li class = "dontshow">dont show </li>
+                    <li class = "dontshow">dont show </li>
+                    <li>
+                        <div class="footer-logo">
+                            <img src="{{ url_for('static', filename='images/Akshat Enterprise-logo1 (1).png') }}" alt="Akshat Enterprise Logo"> 
+                          </div>
+                          <div class="footer-text">
+                            <p>Copyright © 2024-2030</p>
+                            <p>AKSHAT ENTERPRISE.</p>
+                            <p>All rights reserved.</p>
+                          </div>
+                          <div class="social-icons">
+                            <a href="https://youtube.com/@flavaromaff?si=t4WSQYLZa9Ps-2CO" target=" "><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://wa.me/message/73J32OMRO46CF1"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/akshat.enterprise?igsh=MWZvdWVlYXoyenE5OQ==" target=" "><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Company</h3>
+            <ul>
+                <li><a href="#" target="_blank">History</a></li>
+                <li><a href="#" target="_blank">Vision</a></li>
+                <li>Business segments
+                    <ul>
+                        <li><a href="{{ url_for('flavour_main_page') }}" target="_blank">Flavours</a></li>
+                        <li><a href="{{ url_for('fragrance_main_page') }}" target="_blank">Fragrances</a></li>
+                        <li><a href="{{ url_for('color_main_page') }}" target="_blank">Colours</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Flavour</h3>
+                <ul>
+                    <li><a href=".{{ url_for('product_page') }}" target="_blank">Products</a></li>
+                    <li><a href="{{ url_for('product_page') }}" target="_blank">Your Applications</a></li>
+                    <li>Bakery
+                        <ul>
+                            <li><a href="{{ url_for('dairy') }}" target="_blank">Confectionery</a></li>
+                            <li><a href="{{ url_for('beverage') }}" target="_blank">Beverages</a></li>
+                            <li><a href="{{ url_for('dairy') }}" target="_blank">Dairy</a></li>
+                            <li><a href="{{ url_for('pharma') }}" target="_blank">Pharmaceuticals</a></li>
+                        </ul>  
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li><a href="{{ url_for('color_main_page') }}" target="_blank">Colours</a></li>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}" target="_blank">Enquiry</a></li>
+                        <li><a href="{{ url_for('blogs') }}" target="_blank">Blog</a></li>
+                        <li><a href="{{ url_for('contact_us') }}" target="_blank">Contact Us</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+              </ul>
+            </div>
+            </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+  </footer>
+</div>
+
+
+     <!-- Floating Inquiry Button -->
+     <button class="inquiry-btn" id="inquiryButton" onclick="toggleForm()">✉ Quick Inquiry</button>
+
+     <!-- Inquiry Form -->
+     <div class="inquiry-form" id="inquiryForm">
+         <div class="inquiry-header" onclick="toggleForm()">Quick Inquiry</div>
+         <div class="inquiry-content">
+             <form id="form" action="/submit_inquiry" method="POST">
+                 <input type="text" name="name" id="name" placeholder="Full Name" required>
+                 <input type="email" name="email" id="email" placeholder="Email Address" required>
+                 <input type="tel" name="phone" id="phone" placeholder="Contact Number" required>
+                 <select name="category" id="category" required>
+                     <option value="">Select a Category</option>
+                     <option value="Flavadew">Flavadew</option>
+                     <option value="Flavaseal">Flavaseal</option>
+                     <option value="Color">Color</option>
+                     <option value="Fragrances">Fragrances</option>
+                 </select>
+                 <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+
+
+                 <div class="captcha-box">
+                     <span id="captchaText" >123ABC</span>
+                     <!-- <input type="text" id="captcha" placeholder="Enter Captcha" required> -->
+                     <button type="button" id="regenerateCaptcha" onclick="generateCaptcha()">🔄</button>
+                 </div>
+
+                 <div class="captcha-container">
+                    <input type="text" id="captcha" placeholder="Enter Captcha" required>
+                    <div class="error-message" id="captchaError" style="display:none;">Incorrect CAPTCHA. Please try again.</div>
+                    <button type="submit" id="sendBtn">SEND</button>
+                 </div>
+                 
+             </form>
+         </div>
+     </div>
+ 
+     <!-- Success Message Popup -->
+     <div class="success-popup" id="successPopup">Your Inquiry Submitted Successfully!</div>
+ 
+     <script src="{{ url_for('static', filename='enquiry_script.js') }}"></script>
+ 
+
+
+    </body>
+</html>
+    
+                

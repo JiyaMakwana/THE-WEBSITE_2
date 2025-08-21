@@ -1,0 +1,230 @@
+/* General Styles */
+body {
+    font-family: Corbel;
+    margin: 0;
+    padding: 0;
+}
+
+/* Floating Inquiry Button */
+.inquiry-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 10000;
+}
+
+.inquiry-btn:hover {
+    background: #cc5200;
+}
+
+/* Inquiry Form (Initially Hidden) */
+.inquiry-form {
+    position: fixed;
+    bottom: -80%;
+    right: 20px;
+    width: 300px;
+    min-height: auto;
+    background: #ff6600;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    /* padding-bottom: 20px; */
+}
+
+.inquiry-form.open {
+    display: block;
+    bottom: 50px;
+}
+
+
+.inquiry-header {
+    background: #cc5200;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: fit-content;
+}
+
+.inquiry-content {
+    padding: 15px;
+    
+}
+.inquiry-content form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap:5px;
+}
+
+/* Uniform Input Fields */
+.inquiry-form input,
+.inquiry-form select,
+.inquiry-form textarea {
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    margin: 5px 0;
+    display: block;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+    color: #333;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.inquiry-form input::placeholder,
+.inquiry-form select::placeholder,
+.inquiry-form textarea::placeholder {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: top 0.3s ease, font-size 0.3s ease, left 0.3s ease;
+}
+
+.inquiry-form input:focus::placeholder,
+.inquiry-form select:focus::placeholder,
+.inquiry-form textarea:focus::placeholder,
+.inquiry-form input:not(:placeholder-shown)::placeholder,
+.inquiry-form select:not(:placeholder-shown)::placeholder,
+.inquiry-form textarea:not(:placeholder-shown)::placeholder {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.inquiry-form textarea {
+    resize: none;
+}
+
+/* Button Styling */
+#sendBtn{
+    width: 100%;
+    height: 40px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+     position: relative;
+    /*top:5px; */
+     margin-top: 10px; /*Add margin to create space between the button and the above field */
+    transition: margin-top 0.3s ease-in-out;
+}
+
+#sendBtn:hover {
+    background: #218838;
+}
+
+/* CAPTCHA Box */
+.captcha-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffcc80;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    /* margin: 5px 0; */
+    z-index: 9999;
+    margin-bottom: 5px;
+}
+
+#captcha{
+    flex-grow: 1;
+    width:100%;
+    /* padding:10px; */
+    margin-bottom: 10px;
+    display: block;
+}
+
+.captcha-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.captcha-box span {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.captcha-box button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    position: relative;
+    right: 10px;
+    top: -1px;
+    width: 50px;
+}
+
+/* Error Message for CAPTCHA */
+.error-message {
+    color: white;
+    background: #e81616;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+     display: none; /*Ensure the error message is visible */
+     box-sizing: border-box;
+    z-index: 9999;
+}
+
+.error-message + #sendBtn {
+    margin-bottom:10px;
+}
+
+/* Success Message Popup */
+.success-popup {
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    text-align: center;
+    min-width: 250px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.success-popup.show {
+    bottom: 30px;
+    opacity: 1;
+}

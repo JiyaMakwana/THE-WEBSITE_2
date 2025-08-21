@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content=""/>
+    <meta name="description"
+        content="Register your business with us and get started with your business journey."/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.register/registration_form.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.register/fonts.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.register/styles.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.register/components.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='static.register/index.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='header_footer.css') }}"/>
+    <link rel="stylesheet" href="{{ url_for('static', filename='enquiry.css') }}"/>
+</head>
+<body>
+    <header>
+        <main>
+            <div class="nav-1">
+                <div class="main_header">
+                    <div class="logo">
+                        <img src="{{ url_for('static', filename='images/main_logo.png') }}" alt="OUR LOGO" />
+ 
+                        <!-- <a href="../1main_home_page/main.html"><img src="../images/main_logo.png" alt=""></a> -->
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="{{ url_for('home') }}">HOME</a></li>
+                            <li><a href="{{ url_for('product_page') }}">PRODUCTS</a></li>
+                            <li><a href="{{ url_for('customer_order') }}">ORDERS</a></li>
+                            <li><a href="{{ url_for('blogs') }}">BLOGS</a></li>
+                            <li><a href="{{ url_for('contact_us') }}">CONTACT US</a></li>
+                            <li><a href="{{ url_for('login') }}"><button class="login-but" >Login/Register</button></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                </main>
+    </header>
+
+    <form id="registerForm" method="post" action = "/register">
+                    <!-- ------------------------form------------------------- -->
+                <div class="registration">
+                    <div class="row-registration">
+                        <div class="registration_column">
+                            <img 
+                                src="{{ url_for('static', filename='images/img2.jpg') }}" 
+                                alt="img2" 
+                                class="registration_column_img"
+                            />
+                        </div>
+
+                        <!-- form fields form -->
+                        <div class="registration-form">
+                            <div class="registration-form_confirmation">
+                                <div class="registration-form_title-container">
+                                    <h1 class="registration-form_title ui heading size-headings">Registration Form</h1>
+                                    <h2 class="registration-form_subtitle ui heading size-headingxs">
+                                    <span class="registration-form_subtitle-span">
+                                        Please provide all required details to your business with us.
+                                    </span>
+                                    </h2>
+                                </div>
+
+                                <!-- ===============COMPANY NAME LABEL AND INPUT=============== -->
+                                <div class="registration-form_input-container">
+                                    <div class="registration-form_company-field">
+                                    <p class="registration-form_label--company ui text size-textxs">
+                                        <span class="registration-form_label--company-span">Company Name</span>
+                                        <span class="registration-form_label--company-span1">*:</span>
+                                    </p>
+                                    <input type="text" id="company-name" name="company" class="registration-form_input--company" ui input amber_700_42 size-sm fill round/>
+                                </div>
+
+                    <!-- ===============REPRESENTATIVE NAME LABEL AND INPUT=============== -->
+
+                        <div class="registration-form_representative-row">
+                            <div class="registration-form_representative-field">
+                                <p class="registration-form_label--company ui text size-textxs">
+                                    <span class="registration-form_label--company-span-repre" >Representative Name</span>
+                                    <span class="registration-form_label--company-span1">*:</span>
+                                </p>
+                                <label class="registration-form_input--first-name ui input amber_700_42 size-sm fill round">
+                                    <input type="text" id="name" name="name" placeholder="First Name"/>
+                                </label>
+                            </div>
+                            <label class="registration-form_input--last-name ui input amber_700_42 size-sm fill round">
+                                <input type="text" id="lname" name="lname" placeholder="Last Name"/>
+                            </label>
+                        </div>
+
+                    <!-- ===============EMAIL=============== -->
+                        <div class="registration-form_email-field">
+                            <p class="registration-form_label--company ui text size-textxs">
+                                <span class="registration-form_label--company-span">Email</span>
+                                <span class="registration-form_label--company-span1">*:</span>
+                            </p>
+                            <label class="registration-form_input--company ui input amber_700_42 size-sm fill round">
+                                <input type="email"id="email" name="email"/>
+                            </label>
+                        </div>
+
+                    <!-- ===============CONTACT=============== -->
+                            <div class="registration-form_contact-row">
+                                <p class="registration-form_label--contact ui text size-textxs">
+                                    <span class="registration-form_label--company-span">Phone</span>
+                                    <span class="registration-form_label--company-span1">*:&nbsp;</span>
+                                </p>
+                                <label class="registration-form_input--contact ui input amber_700_42 size-sm fill round">
+                                    <input type="tel" id="phone" name="phone" placeholder="+91"/>
+                                </label>
+                            </div>
+                    <!-- ===============GST=============== -->
+
+                        <div class="registration-form_gst-row">
+                            <p class="registration-form_label--contact ui text size-textxs">
+                                <span class="registration-form_label--company-span">GST</span>
+                                <span class="registration-form_label--company-span1">*:</span>
+                            </p>
+                            <label class="registration-form_input--gst ui input amber_700_42 size-sm fill round">
+                                <input type="text" id="gst" name="edittext" placeholder="16-digit gst number"/>
+                            </label>
+                        </div>
+
+                    <!-- ===============PASSWORD=============== -->
+                        <div class="registration-form_psw-field">
+                            <p class="registration-form_label--company ui text size-textxs">
+                                <span class="registration-form_label--company-span">Password</span>
+                                <span class="registration-form_label--company-span1">*:</span>
+                            </p>
+                            <label class="registration-form_input--company ui input amber_700_42 size-sm fill round">
+                                <input type="password" id="psw" name="psw"/>
+                            </label>
+                        </div>
+                            </div>
+                        </div>
+            <!-- submit button -->
+     <input type="submit" value="Register" name="register"class="registration-button"/>
+
+                    <!-- ===============ALREADY HAVE ACCOUNT=============== -->
+                <p class="registration-form_login-prompt ui text size-textxs">
+                    <span class="registration-form_login-prompt-span">Already have an account?</span>
+                    <span class="registration-form_login-prompt-span-1">&nbsp;</span>
+                    <a class="registration-form_login-prompt-span-2" href="{{ url_for('login') }}">Log in</a>
+                </p>
+
+                    </div>
+                </div>
+    </form>  
+    <script src="{{ url_for('static', filename='static.register/register.js') }}"></script>
+
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Flavaroma Logo" >
+        <text class="we_sell">We sell :</text>
+        <img src="{{ url_for('static', filename='images/flavadew.jpg') }}" alt="Flavaroma Logo">
+        <img src="{{ url_for('static', filename='images/flavaseal.jpg') }}" alt="Flavaroma Logo"> 
+        <img src="{{ url_for('static', filename='images/color_logo.png') }}" alt="Flavaroma Logo" class="color_logo">
+      </div>
+      
+    </div>
+  </footer>
+
+  <!-- Second Footer -->
+  <footer class="footer2">
+    <div class="footer-content">
+        <div class="footer-links">
+            <div class="footer-column1">
+                <ul>
+                    <li class = "dontshow">dont show </li>
+                    <li class = "dontshow">dont show </li>
+                    <li>
+                        <div class="footer-logo">
+                            <img src="{{ url_for('static', filename='images/Akshat Enterprise-logo1 (1).png') }}" alt="Akshat Enterprise Logo"> 
+                          </div>
+                          <div class="footer-text">
+                            <p>Copyright © 2024-2030</p>
+                            <p>AKSHAT ENTERPRISE.</p>
+                            <p>All rights reserved.</p>
+                          </div>
+                          <div class="social-icons">
+                            <a href="https://youtube.com/@flavaromaff?si=t4WSQYLZa9Ps-2CO" target=" "><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://wa.me/message/73J32OMRO46CF1"><i class="fa-brands fa-square-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/akshat.enterprise?igsh=MWZvdWVlYXoyenE5OQ==" target=" "><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Company</h3>
+            <ul>
+                <li><a href="#" target="_blank">History</a></li>
+                <li><a href="#" target="_blank">Vision</a></li>
+                <li>Business segments
+                    <ul>
+                        <li><a href="{{ url_for('flavour_main_page') }}" target="_blank">Flavours</a></li>
+                        <li><a href="{{ url_for('fragrance_main_page') }}" target="_blank">Fragrances</a></li>
+                        <li><a href="{{ url_for('color_main_page') }}" target="_blank">Colours</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Flavour</h3>
+                <ul>
+                    <li><a href=".{{ url_for('product_page') }}" target="_blank">Products</a></li>
+                    <li><a href="{{ url_for('product_page') }}" target="_blank">Your Applications</a></li>
+                    <li>Bakery
+                        <ul>
+                            <li><a href="{{ url_for('dairy') }}" target="_blank">Confectionery</a></li>
+                            <li><a href="{{ url_for('beverage') }}" target="_blank">Beverages</a></li>
+                            <li><a href="{{ url_for('dairy') }}" target="_blank">Dairy</a></li>
+                            <li><a href="{{ url_for('pharma') }}" target="_blank">Pharmaceuticals</a></li>
+                        </ul>  
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Ingredients</h3>
+                <ul>
+                    <li><a href="{{ url_for('color_main_page') }}" target="_blank">Colours</a></li>
+                    <ul>
+                        <li><a href="{{ url_for('home') }}" target="_blank">Enquiry</a></li>
+                        <li><a href="{{ url_for('blogs') }}" target="_blank">Blog</a></li>
+                        <li><a href="{{ url_for('contact_us') }}" target="_blank">Contact Us</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+              </ul>
+            </div>
+            </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </div>
+  </footer>
+
+
+     <!-- Floating Inquiry Button -->
+     <button class="inquiry-btn" id="inquiryButton" onclick="toggleForm()">✉ Quick Inquiry</button>
+
+     <!-- Inquiry Form -->
+     <div class="inquiry-form" id="inquiryForm">
+         <div class="inquiry-header" onclick="toggleForm()">Quick Inquiry</div>
+         <div class="inquiry-content">
+             <form id="form" action="/submit_inquiry" method="POST">
+                 <input type="text" name="name" id="name" placeholder="Full Name" required>
+                 <input type="email" name="email" id="email" placeholder="Email Address" required>
+                 <input type="tel" name="phone" id="phone" placeholder="Contact Number" required>
+                 <select name="category" id="category" required>
+                     <option value="">Select a Category</option>
+                     <option value="Flavadew">Flavadew</option>
+                     <option value="Flavaseal">Flavaseal</option>
+                     <option value="Color">Color</option>
+                     <option value="Fragrances">Fragrances</option>
+                 </select>
+                 <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+
+
+                 <div class="captcha-box">
+                     <span id="captchaText" >123ABC</span>
+                     <!-- <input type="text" id="captcha" placeholder="Enter Captcha" required> -->
+                     <button type="button" id="regenerateCaptcha" onclick="generateCaptcha()">🔄</button>
+                 </div>
+
+                 <div class="captcha-container">
+                    <input type="text" id="captcha" placeholder="Enter Captcha" required>
+                    <div class="error-message" id="captchaError" style="display:none;">Incorrect CAPTCHA. Please try again.</div>
+                    <button type="submit" id="sendBtn">SEND</button>
+                 </div>
+                 
+             </form>
+         </div>
+     </div>
+ 
+     <!-- Success Message Popup -->
+     <div class="success-popup" id="successPopup">Your Inquiry Submitted Successfully!</div>
+ 
+     <script src="{{ url_for('static', filename='enquiry_script.js') }}"></script>
+ 
+
+
+</body>
+</html>

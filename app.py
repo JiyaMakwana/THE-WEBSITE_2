@@ -1,19 +1,24 @@
 from flask import Flask, jsonify, request, render_template, redirect, url_for, session
 import mysql.connector
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)
 app.secret_key = 'your_secret_key'  # Set a secret key for session management
 
 # Database connection
+
+
 def get_db_connection():
     return mysql.connector.connect(
-        host='localhost',
-        user='root',
-        password='root_password',
-        database='user_db'
+        host=os.getenv("DB_HOST", "localhost"),
+        user=os.getenv("DB_USER", "root"),
+        password=os.getenv("DB_PASS", "root_password"),
+        database=os.getenv("DB_NAME", "user_db"),
+        port=int(os.getenv("DB_PORT", 3306))
     )
+
 
 # User Registration
 @app.route('/')
